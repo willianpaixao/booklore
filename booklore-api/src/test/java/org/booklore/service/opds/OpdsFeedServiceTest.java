@@ -476,32 +476,24 @@ class OpdsFeedServiceTest {
         verify(opdsBookService).getBooksPage(TEST_USER_ID, "fantasy", null, Set.of(10L), 0, 50);
     }
     @Test
-    void fileMimeType_shouldReturnCorrectMimeTypeForCbz() throws Exception {
-        var method = OpdsFeedService.class.getDeclaredMethod("fileMimeType", BookFile.class);
-        method.setAccessible(true);
-
+    void fileMimeType_shouldReturnCorrectMimeTypeForCbz() {
         BookFile bookFile = BookFile.builder()
                 .bookType(BookFileType.CBX)
                 .fileName("comic.cbz")
                 .archiveType(ArchiveUtils.ArchiveType.UNKNOWN)
                 .build();
 
-        String mimeType = (String) method.invoke(opdsFeedService, bookFile);
-        assertThat(mimeType).isEqualTo("application/vnd.comicbook+zip");
+        assertThat(OpdsMimeTypeResolver.resolve(bookFile)).isEqualTo("application/vnd.comicbook+zip");
     }
 
     @Test
-    void fileMimeType_shouldReturnCorrectMimeTypeForCbr() throws Exception {
-        var method = OpdsFeedService.class.getDeclaredMethod("fileMimeType", BookFile.class);
-        method.setAccessible(true);
-
+    void fileMimeType_shouldReturnCorrectMimeTypeForCbr() {
         BookFile bookFile = BookFile.builder()
                 .bookType(BookFileType.CBX)
                 .fileName("comic.cbr")
                 .archiveType(ArchiveUtils.ArchiveType.UNKNOWN)
                 .build();
 
-        String mimeType = (String) method.invoke(opdsFeedService, bookFile);
-        assertThat(mimeType).isEqualTo("application/vnd.comicbook-rar");
+        assertThat(OpdsMimeTypeResolver.resolve(bookFile)).isEqualTo("application/vnd.comicbook-rar");
     }
 }

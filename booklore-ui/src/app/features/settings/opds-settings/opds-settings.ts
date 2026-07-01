@@ -43,6 +43,7 @@ import {TranslocoDirective, TranslocoPipe, TranslocoService} from '@jsverse/tran
 export class OpdsSettings implements OnInit, OnDestroy {
 
   opdsEndpoint = `${API_CONFIG.BASE_URL}/api/v1/opds`;
+  opdsV2Endpoint = `${API_CONFIG.BASE_URL}/api/v2/opds`;
   komgaEndpoint = `${API_CONFIG.BASE_URL}/komga`;
   opdsEnabled = false;
   komgaApiEnabled = false;
@@ -184,6 +185,15 @@ export class OpdsSettings implements OnInit, OnDestroy {
   copyEndpoint(): void {
     navigator.clipboard.writeText(this.opdsEndpoint).then(() => {
       this.showMessage('success', this.t.translate('common.success'), this.t.translate('settingsOpds.opdsCopied'));
+    });
+  }
+
+  copyOpdsV2Endpoint(): void {
+    navigator.clipboard.writeText(this.opdsV2Endpoint).then(() => {
+      this.showMessage('success', this.t.translate('common.success'), this.t.translate('settingsOpds.opdsV2Copied'));
+    }).catch(err => {
+      console.error('Copy failed', err);
+      this.showMessage('error', this.t.translate('common.error'), this.t.translate('settingsOpds.copyError'));
     });
   }
 

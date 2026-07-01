@@ -22,7 +22,9 @@
         "opdsHint": "",
         "komgaBase": "",
         "komgaHint": "",
-        "copyUrl": ""
+        "copyUrl": "",
+        "opdsV2Catalog": "",
+        "opdsV2Hint": ""
     },
     "users": {
         "sectionTitle": "",
@@ -76,5 +78,7 @@
     "komgaEnabled": "",
     "komgaDisabled": "",
     "groupEnabled": "",
-    "groupDisabled": ""
+    "groupDisabled": "",
+    "opdsV2Copied": "",
+    "copyError": ""
 }

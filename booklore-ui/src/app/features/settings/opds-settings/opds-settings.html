@@ -142,6 +142,35 @@
                   </p-button>
                 </div>
               </div>
+
+              <div class="endpoint-item">
+                <div class="endpoint-header">
+                  <div class="endpoint-icon">
+                    <i class="pi pi-globe"></i>
+                  </div>
+                  <div class="endpoint-info">
+                    <span class="endpoint-label">{{ t('endpoints.opdsV2Catalog') }}</span>
+                    <span class="endpoint-hint">{{ t('endpoints.opdsV2Hint') }}</span>
+                  </div>
+                </div>
+                <div class="endpoint-url-row">
+                  <input
+                    id="opds-v2-endpoint-url"
+                    class="endpoint-input"
+                    type="text"
+                    pInputText
+                    [value]="opdsV2Endpoint"
+                    readonly/>
+                  <p-button
+                    icon="pi pi-copy"
+                    severity="info"
+                    [outlined]="true"
+                    size="small"
+                    (onClick)="copyOpdsV2Endpoint()"
+                    [pTooltip]="t('endpoints.copyUrl')">
+                  </p-button>
+                </div>
+              </div>
             }
 
             @if (komgaApiEnabled) {

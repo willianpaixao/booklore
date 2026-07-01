@@ -22,7 +22,9 @@
         "opdsHint": "Для застосунків, сумісних з OPDS",
         "komgaBase": "Базовий URL Komga",
         "komgaHint": "Для Tachiyomi, Komelia тощо",
-        "copyUrl": "Скопіювати URL"
+        "copyUrl": "Скопіювати URL",
+        "opdsV2Catalog": "URL каталогу OPDS v2.0",
+        "opdsV2Hint": "Для застосунків OPDS 2.0 (JSON)"
     },
     "users": {
         "sectionTitle": "Користувачі OPDS",
@@ -76,5 +78,7 @@
     "komgaEnabled": "Komga API увімкнено.",
     "komgaDisabled": "Komga API вимкнено.",
     "groupEnabled": "Книги без серії буде згруповано під \"Невідомою серією\".",
-    "groupDisabled": "Книги без серії відображатимуться як окремі серії."
+    "groupDisabled": "Книги без серії відображатимуться як окремі серії.",
+    "opdsV2Copied": "Ендпоінт OPDS v2.0 скопійовано в буфер обміну",
+    "copyError": "Не вдалося скопіювати в буфер обміну"
 }

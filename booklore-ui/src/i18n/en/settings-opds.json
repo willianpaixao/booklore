@@ -22,7 +22,9 @@
     "opdsHint": "For OPDS-compatible apps",
     "komgaBase": "Komga Base URL",
     "komgaHint": "For Tachiyomi, Komelia, etc.",
-    "copyUrl": "Copy URL"
+    "copyUrl": "Copy URL",
+    "opdsV2Catalog": "OPDS v2.0 Catalog URL",
+    "opdsV2Hint": "For OPDS 2.0 (JSON) apps"
   },
   "users": {
     "sectionTitle": "OPDS Users",
@@ -76,5 +78,7 @@
   "komgaEnabled": "Komga API Enabled.",
   "komgaDisabled": "Komga API Disabled.",
   "groupEnabled": "Books without series will be grouped under \"Unknown Series\".",
-  "groupDisabled": "Books without series will appear as individual series."
+  "groupDisabled": "Books without series will appear as individual series.",
+  "opdsV2Copied": "OPDS v2.0 endpoint copied to clipboard",
+  "copyError": "Failed to copy to clipboard"
 }
