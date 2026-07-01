@@ -22,7 +22,9 @@
         "opdsHint": "För OPDS-kompatibla appar",
         "komgaBase": "Komga-bas-URL",
         "komgaHint": "För Tachiyomi, Komelia osv.",
-        "copyUrl": "Kopiera URL"
+        "copyUrl": "Kopiera URL",
+        "opdsV2Catalog": "OPDS v2.0-katalog-URL",
+        "opdsV2Hint": "För OPDS 2.0 (JSON)-appar"
     },
     "users": {
         "sectionTitle": "OPDS-användare",
@@ -76,5 +78,7 @@
     "komgaEnabled": "Komga API aktiverat.",
     "komgaDisabled": "Komga API inaktiverat.",
     "groupEnabled": "Böcker utan serie grupperas under \"Okänd serie\".",
-    "groupDisabled": "Böcker utan serie visas som individuella serier."
+    "groupDisabled": "Böcker utan serie visas som individuella serier.",
+    "opdsV2Copied": "OPDS v2.0-slutpunkt kopierad till urklipp",
+    "copyError": "Det gick inte att kopiera till urklipp"
 }

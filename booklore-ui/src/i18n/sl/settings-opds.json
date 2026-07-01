@@ -26,7 +26,9 @@
         "opdsHint": "Za aplikacije, združljive z OPDS",
         "komgaBase": "Osnovni URL za Komga",
         "komgaHint": "Za Tachiyomi, Komelia itd.",
-        "copyUrl": "Kopiraj URL"
+        "copyUrl": "Kopiraj URL",
+        "opdsV2Catalog": "URL kataloga OPDS v2.0",
+        "opdsV2Hint": "Za aplikacije OPDS 2.0 (JSON)"
     },
     "users": {
         "sectionTitle": "Uporabniki OPDS",
@@ -76,5 +78,7 @@
     "komgaEnabled": "Komga API omogočen.",
     "komgaDisabled": "Komga API onemogočen.",
     "groupEnabled": "Knjige brez zbirke bodo združene pod \"Neznana zbirka\".",
-    "groupDisabled": "Knjige brez zbirke se bodo pojavile kot posamezne zbirke."
+    "groupDisabled": "Knjige brez zbirke se bodo pojavile kot posamezne zbirke.",
+    "opdsV2Copied": "Končna točka OPDS v2.0 skopirana v odložišče",
+    "copyError": "Kopiranje v odložišče ni uspelo"
 }

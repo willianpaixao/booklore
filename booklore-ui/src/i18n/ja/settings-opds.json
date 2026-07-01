@@ -22,7 +22,9 @@
         "opdsHint": "OPDS対応アプリ用",
         "komgaBase": "Komga ベースURL",
         "komgaHint": "Tachiyomi、Komeliaなど用",
-        "copyUrl": "URLをコピー"
+        "copyUrl": "URLをコピー",
+        "opdsV2Catalog": "OPDS v2.0 カタログURL",
+        "opdsV2Hint": "OPDS 2.0 (JSON) 対応アプリ用"
     },
     "users": {
         "sectionTitle": "OPDSユーザー",
@@ -76,5 +78,7 @@
     "komgaEnabled": "Komga APIが有効になりました。",
     "komgaDisabled": "Komga APIが無効になりました。",
     "groupEnabled": "シリーズのない本は「不明なシリーズ」の下にグループ化されます。",
-    "groupDisabled": "シリーズのない本は個別のシリーズとして表示されます。"
+    "groupDisabled": "シリーズのない本は個別のシリーズとして表示されます。",
+    "opdsV2Copied": "OPDS v2.0 エンドポイントをクリップボードにコピーしました",
+    "copyError": "クリップボードへのコピーに失敗しました"
 }

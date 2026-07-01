@@ -22,7 +22,9 @@
         "opdsHint": "用于兼容 OPDS 的应用",
         "komgaBase": "Komga 基础 URL",
         "komgaHint": "用于 Tachiyomi、Komelia 等",
-        "copyUrl": "复制 URL"
+        "copyUrl": "复制 URL",
+        "opdsV2Catalog": "OPDS v2.0 目录 URL",
+        "opdsV2Hint": "用于 OPDS 2.0 (JSON) 应用"
     },
     "users": {
         "sectionTitle": "OPDS 用户",
@@ -76,5 +78,7 @@
     "komgaEnabled": "Komga API 已启用。",
     "komgaDisabled": "Komga API 已禁用。",
     "groupEnabled": "没有系列的图书将被归入「未知系列」。",
-    "groupDisabled": "没有系列的图书将作为独立系列显示。"
+    "groupDisabled": "没有系列的图书将作为独立系列显示。",
+    "opdsV2Copied": "OPDS v2.0 端点已复制到剪贴板",
+    "copyError": "复制到剪贴板失败"
 }

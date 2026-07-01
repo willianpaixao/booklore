@@ -58,7 +58,8 @@ public class SecurityConfig {
 
     private static final String[] COMMON_UNAUTHENTICATED_ENDPOINTS = {
             "/api/v1/opds/search.opds",
-            "/api/v2/opds/search.opds"
+            "/api/v2/opds/search.opds",
+            "/api/v2/opds/auth"
     };
 
     @Bean
@@ -83,6 +84,12 @@ public class SecurityConfig {
                         .authenticationEntryPoint((request, response, authException) -> {
                             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
                             response.setHeader("WWW-Authenticate", "Basic realm=\"Booklore OPDS\"");
+                            // Advertise the OPDS 2.0 Authentication Document (Authentication for OPDS spec)
+                            // only for v2 requests, leaving the v1 (XML) 401 response unchanged.
+                            String uri = request.getRequestURI();
+                            if (uri != null && uri.startsWith("/api/v2/opds")) {
+                                response.addHeader("Link", "</api/v2/opds/auth>; rel=\"http://opds-spec.org/auth/document\"; type=\"application/opds-authentication+json\"");
+                            }
                             response.getWriter().write("HTTP Status 401 - " + authException.getMessage());
                         })
                 );

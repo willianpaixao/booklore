@@ -22,7 +22,9 @@
         "opdsHint": "Pour les applications compatibles OPDS",
         "komgaBase": "URL de base Komga",
         "komgaHint": "Pour Tachiyomi, Komelia, etc.",
-        "copyUrl": "Copier l'URL"
+        "copyUrl": "Copier l'URL",
+        "opdsV2Catalog": "URL du catalogue OPDS v2.0",
+        "opdsV2Hint": "Pour les applications OPDS 2.0 (JSON)"
     },
     "users": {
         "sectionTitle": "Utilisateurs OPDS",
@@ -76,5 +78,7 @@
     "komgaEnabled": "API Komga activée.",
     "komgaDisabled": "API Komga désactivée.",
     "groupEnabled": "Les livres sans série seront regroupés sous « Série inconnue ».",
-    "groupDisabled": "Les livres sans série apparaîtront comme des séries individuelles."
+    "groupDisabled": "Les livres sans série apparaîtront comme des séries individuelles.",
+    "opdsV2Copied": "Point d'accès OPDS v2.0 copié dans le presse-papiers",
+    "copyError": "Échec de la copie dans le presse-papiers"
 }
